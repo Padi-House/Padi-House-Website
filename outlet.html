@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Padi House | Outlet</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+        /* 1. Global Reset & Dark Theme */
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== BODY ===== */
+body {
+  line-height: 1.6;
+  color: #333;
+  background-color: #111111;
+}
+
+/* ===== HEADER ===== */
+.header {
+  background-color: #5e4a36;
+  border-bottom: 1px solid #000000;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+}
+
+.logo-area img {
+    height: 60px;
+}
+        body {
+            background-color: #000; /* Black background */
+            color: #fff; /* White text */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean font */
+            line-height: 1.6;
+        }
+
+        /* 2. Container Styling */
+        .outlets-section {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+.header-right a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.header-right a:hover {
+    color: #ffcc00;
+    font-weight: 300; /* Thin, elegant look like the screenshot */
+        
+    }
+
+        /* 3. Grid Layout (The most important part for the look) */
+        .outlets-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+            gap: 40px; /* Space between cards */
+        }
+
+        /* 4. Card Styling */
+        .outlet-card {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        /* Image handling to ensure they align perfectly */
+        .outlet-card img {
+            width: 100%;
+            height: 250px; /* Fixed height for uniformity */
+            object-fit: cover; /* Crops image cleanly without stretching */
+            border-radius: 4px;
+            margin-bottom: 15px;
+            background-color: #333; /* Fallback color if image fails to load */
+            transition: transform 0.4s ease, box-shadow 0.4s ease; /* Smooth transition */
+}
+    
+.outlet-card img:hover {
+    transform: scale(1.05); /* Zoom slightly */
+    box-shadow: 0 10px 20px rgba(255, 204, 0, 0.5); /* Gold-ish glow */
+    border-radius: 6px; /* Slight rounding for hover effect */
+}
+
+        /* Typography matching */
+        .outlet-card h3 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        .outlet-card p {
+            font-size: 0.95rem;
+            color: #ddd; /* Slightly off-white for body text */
+            margin-bottom: 10px;
+        }
+
+        .outlet-card strong {
+            color: #fff;
+        }
+
+        /* Map styling */
+        .map {
+            width: 100%;
+            height: 200px;
+            border: 0;
+            margin-top: 15px;
+            filter: invert(90%) hue-rotate(180deg); /* Optional: Makes map look dark mode */
+            border-radius: 4px;
+        }
+
+        /* 5. Mobile Responsiveness */
+        @media (max-width: 1024px) {
+            .outlets-grid {
+                grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .outlets-grid {
+                grid-template-columns: 1fr; /* 1 column on mobile */
+            }
+            .title {
+                font-size: 2rem;
+            }
+        }
+
+ .footer {
+  background-color: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+    </style>
+</head>
+
+<body>
+      <h2></h2>
+    </div>
+    <header class="header">
+  <div class="nav-container">
+    <div class="logo-area">
+      <img src="images/logo.jpg" alt="Logo">
+      <h2>Padi House</h2>
+    </div>
+   <nav class="header-right">
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="menu.html">MENU</a>
+      <a href="outlet.html">OUTLET</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+  </div>
+</header>
+    <div class="top-bar">
+        <marquee><h1>OUTLETS AVAILABLE</h1></marquee>
+    </div>
+
+<section class="outlets-section">
+
+    <div class="outlets-grid">
+
+        <div class="outlet-card">
+            <img src="images/prima.jpeg.jpg" alt="Padi House Prima Avenue Cyberjaya">
+            <h3>Padi House Prima Avenue, Cyberjaya (2006)</h3>
+            <p>Jalan Teknokrat 5, Cyber 5, 63000 Cyberjaya, Selangor.</p>
+            <p><strong>Tel:</strong> 012‑696 7521</p>
+            <p><strong>Opening hours:</strong> Mon – Sun: 7:30 am – 1:30 am</p>
+            
+            <iframe class="map" src="https://maps.google.com/maps?q=Padi+House+Prima+Avenue&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+        </div>
+
+        <div class="outlet-card">
+            <img src="images/putrajaya.jpeg.jpeg" alt="Padi House Putrajaya">
+            <h3>Padi House, Putrajaya (2012)</h3>
+            <p>Galeria PjH, Presint 4, 62100 Putrajaya.</p>
+            <p><strong>Tel:</strong> 012‑696 5421</p>
+            <p><strong>Opening hours:</strong> Mon – Sun: 8:00 am – 10:00 pm</p>
+
+            <iframe class="map" src="https://maps.google.com/maps?q=Padi+House+Galeria+PjH&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+        </div>
+
+        <div class="outlet-card">
+            <img src="images/sepang.jpeg (1).jpeg" alt="Padi House Mitsui">
+            <h3>Padi House Mitsui Outlet Park, Sepang (2015)</h3>
+            <p>F58 (first floor), Mitsui KLIA Outlet Park, Sepang.</p>
+            <p><strong>Tel:</strong> 012‑696 3243</p>
+            <p><strong>Opening hours:</strong> Mon – Sun: 10:00 am – 10:00 pm</p>
+
+            <iframe class="map" src="https://maps.google.com/maps?q=Padi+House+Mitsui+Outlet+Park&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+        </div>
+
+        <div class="outlet-card">
+             <img src="images/greentown.jpeg.jpeg" alt="Padi House Greentown Ipoh">
+            <h3>Padi House, Greentown Ipoh (2017)</h3>
+            <p>23, Persiaran Greentown 8, Pusat Perdagangan Greentown.</p>
+            <p><strong>Tel:</strong> 012‑676 2843</p>
+            <p><strong>Opening hours:</strong> Mon – Sun: 11:00 am – 11:00 pm</p>
+
+            <iframe class="map" src="https://maps.google.com/maps?q=Padi+House+Greentown+Ipoh&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+        </div>
+
+        <div class="outlet-card">
+            <img src="images/thegarden.jpeg.jpg" alt="Padi House Garden's Mall">
+            <h3>Padi House, Garden's Mall (2022)</h3>
+            <p>T‑237 A&B, 3rd Floor, Mid Valley City, Kuala Lumpur.</p>
+            <p><strong>Tel:</strong> 012‑696 5625</p>
+            <p><strong>Opening hours:</strong> Mon – Sun: 10:00 am – 10:00 pm</p>
+
+            <iframe class="map" src="https://maps.google.com/maps?q=Padi+House+The+Gardens+Mall&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+        </div>
+        
+    </div>
+</section>
+<footer class="footer">
+  <p>
+    &copy; 2025 Padi House Holdings Sdn. Bhd. All Rights Reserved<br>
+    Serving authentic Malaysian cuisine with passion and tradition.
+  </p>
+</footer>
+
+</body>
+</html>

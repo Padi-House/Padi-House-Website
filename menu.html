@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Padi House | Menu</title>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== BODY ===== */
+body {
+  line-height: 1.6;
+  color: #333;
+  background-color: #f6f3ee;
+}
+
+/* ===== HEADER ===== */
+.header {
+  background-color: #5e4a36;
+  border-bottom: 1px solid #000000;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+    .header-right a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.header-right a:hover {
+    color: #ffcc00;
+    font-weight: 300; /* Thin, elegant look like the screenshot */
+}
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #4b5d52;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #2f3e34;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background-image: url("images/front-page.jpg");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    .hero h2, .hero p {
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    }
+
+    .btn {
+      background-color: #4b5d52;
+      color: white;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 20px;
+      transition: transform 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    .filter-buttons {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .filter-buttons button {
+      padding: 10px 20px;
+      margin: 5px;
+      border: none;
+      border-radius: 20px;
+      background-color: #4b5d52;
+      color: white;
+      cursor: pointer;
+    }
+
+    .menu {
+      padding: 60px 30px;
+      text-align: center;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .menu-card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      position: relative;
+      animation: fadeIn 1.2s ease-in;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .menu-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    .menu-card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .best-seller {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      background-color: #4b5d52;
+      color: white;
+      padding: 6px 12px;
+      font-size: 12px;
+      border-radius: 20px;
+      font-weight: bold;
+    }
+
+    .gallery {
+      padding: 60px 30px;
+      text-align: center;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.05);
+    }
+    .footer {
+  background-color: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+</style>
+<body>
+
+<header class="header">
+  <div class="nav-container">
+    <div class="logo-area">
+      <img src="images/logo.jpg" alt="Logo">
+      <h2>Padi House</h2>
+    </div>
+    <nav class="header-right">
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="menu.html">MENU</a>
+      <a href="outlet.html">OUTLET</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HOME -->
+<section class="hero" id="home">
+  <h2>A Taste of Authentic Malaysian Cuisine</h2>
+  <p>Enjoy traditional flavours in a modern and cozy atmosphere</p>
+  <a href="#menu" class="btn">View Menu</a>
+</section>
+
+<!-- MENU -->
+<section class="menu" id="menu">
+  <h2>Our Menu</h2>
+
+  <div class="filter-buttons">
+    <button onclick="filterMenu('all')">All</button>
+    <button onclick="filterMenu('food')">Food</button>
+    <button onclick="filterMenu('drink')">Drinks</button>
+  </div>
+
+  <div class="menu-grid">
+
+    <!-- ROW 1 -->
+    <div class="menu-card food">
+      <div class="best-seller">Best Seller</div>
+      <img src="images/nasi-lemak.jpg">
+      <h3>Nasi Lemak</h3>
+      <p>Fragrant rice with sambal and crispy anchovies</p>
+      <span>RM 12.90</span>
+    </div>
+
+    <div class="menu-card food">
+      <div class="best-seller">Best Seller</div>
+      <img src="images/chicken-chop.jpg">
+      <h3>Chicken Chop</h3>
+      <p>Grilled chicken with tartar sauce</p>
+      <span>RM 18.90</span>
+    </div>
+
+    <div class="menu-card drink">
+      <div class="best-seller">Best Seller</div>
+      <img src="images/latte.jpg">
+      <h3>Caffe Latte</h3>
+      <p>Smooth espresso with creamy milk</p>
+      <span>RM 10.90</span>
+    </div>
+
+    <!-- ROW 2 -->
+    <div class="menu-card food">
+      <img src="images/spaghetti.jpg">
+      <h3>Spaghetti Bolognese</h3>
+      <p>Pasta with rich tomato and minced beef sauce</p>
+      <span>RM 17.90</span>
+    </div>
+
+    <div class="menu-card food">
+      <img src="images/nasi-goreng.jpg">
+      <h3>Nasi Goreng Kampung</h3>
+      <p>Traditional fried rice with anchovies and chili</p>
+      <span>RM 13.90</span>
+    </div>
+
+    <div class="menu-card drink">
+      <img src="images/lemon-ais.jpg">
+      <h3>Iced Lemon Tea</h3>
+      <p>Refreshing tea with fresh lemon</p>
+      <span>RM 7.90</span>
+    </div>
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+  <h2>Gallery</h2>
+  <div class="gallery-grid">
+    <img src="images/front-page.jpg">
+    <img src="images/nasi-lemak.jpg">
+    <img src="images/chicken-chop.jpg">
+    <img src="images/latte.jpg">
+    <img src="images/spaghetti.jpg">
+  </div>
+</section>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>
+    &copy; 2025 Padi House Holdings Sdn. Bhd. All Rights Reserved<br>
+    Serving authentic Malaysian cuisine with passion and tradition.
+  </p>
+</footer>
+<script>
+function filterMenu(category) {
+  const cards = document.querySelectorAll('.menu-card');
+
+  cards.forEach(card => {
+    if (category === 'all') {
+      card.style.display = 'block';
+    } else if (card.classList.contains(category)) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+</script>
+</body>
+</html>
